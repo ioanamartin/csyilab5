@@ -9,23 +9,23 @@ deploy:
   local_dir: dpl_cd_upload
   skip_cleanup: true
   on: &2
-    repo: <REPLACE>balcanu/csyi-lab-6
-  bucket: <REPLACE>balcanu-test-travis-us-west-2
-  region: us-west-2
+    repo: <REPLACE>balcanu/csyilab5
+  bucket: <REPLACE>balcanu-csyilab5-code-deploy
+  region: eu-west-1
 - provider: codedeploy
-  bucket: <REPLACE>balcanu-test-travis-us-west-2
+  bucket: <REPLACE>balcanu-csyilab5-code-deploy
   access_key_id: <REPLACE>AKIAJEKQIFMT56GAWG4Q
   secret_access_key: *1
-  key: csyi-lab-6.tgz
-  bundle_type: 'tgz'
-  application: csyi-lab-6
+  key: csyi-lab-5.tgz
+  bundle_type: tgz
+  application: csyilab5
   deployment_group: DemoFleet
   on: *2
-  region: us-west-2
+  region: eu-west-1
 before_deploy:
 - mkdir -p dpl_cd_upload
 - cp -r codedeploy target
 - cp target/cloudshape-1.0.0.jar target/codedeploy
-- tar -czvf dpl_cd_upload/csyi-lab-6.tgz -C target/codedeploy .
+- tar -czvf dpl_cd_upload/csyi-lab-5.tgz -C target/codedeploy .
 
 

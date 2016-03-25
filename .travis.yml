@@ -26,5 +26,5 @@ before_deploy:
 - mkdir -p dpl_cd_upload
 - cp -r codedeploy target
 - cp target/cloudshape-1.0.0.jar target/codedeploy
-- tar -czvf dp1_cd_upload/csyi-lab-5.tgz -C target/codedeploy .
-- mv csyi-lab-5.tgz dp1_cd_upload/csyi-lab-5.tgz
+- tar -czvf dpl_cd_upload/csyi-lab-5.tgz -C target/codedeploy .
+- mv csyi-lab-5.tgz dpl_cd_upload/csyi-lab-5.tgz

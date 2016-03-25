@@ -5,7 +5,7 @@ deploy:
 - provider: s3
   access_key_id: AKIAJNWK6XDCHQMPPTAQ
   secret_access_key: &1
-    secure: hWh+7cXoE/6Q4Xehnt+PP1N3zvNSQKOdKr6XMVn3UtSf5AAkuGFHGoiRpjOZvohIgp/shFsz9xsJ8/im8bu7zZx9FDy6mAtVbfNZzLRr3Fj8ZzqSBCOmhB/T/P6xWROZUMskQj7hCgHa4/mTl+H+Wnp6r+WPT6ZbRDWgTii7+SaHiwFluKXWlWJQocf6KXAMC3cXAltkV36H+BDVWvgwyIhEcirFiY1OHxd5h9aHf6LEh6mGJp75P0MrJ4PNNarE7hGpBEfMSCqj0iVsUTa46a58wmYkAUzvLL8tdf+CxAgH2Qf/vk+H/KkTDWp4NLDfVbjQXGaoNM6024uQOkApusXF36EU6iX+pT8SPochPrUQASxdk3iUqai3XP5qTWdD9r1SkbcjHVAxLotcV05OHJYh+Ho5w6PYFL4GVZNAmawoAxRRDOVoHn/yuOisBlcjxJ0NeH2uik1NSnLLwNd9ISk9xAqsbne/P4rNXNmaOqm7hHhhZdvABrXH9H4mt4L+fNIj4OvQdrI81EokzGhbK7zz/ys5XvV9EEKAM+0H02dqWCYS4QGmOAAtbG7vZYyMvQPL1rY8SDLV2Ox9z3rO0MDrIg4nqfAgkziHNoXObsd5CYfl5/0IJJ/Mg7QLm4rc2awUxW8i8UAIEPWToCBr49eI4/thu8hgAr7D8hwFxSM=
+    secure: wr3Ok4wEUTf+POpAOBmHeWKGj238WoT2Auz9K2Zp
   local_dir: dpl_cd_upload
   skip_cleanup: true
   on: &2

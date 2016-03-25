@@ -40,6 +40,11 @@ public class MemoryStoreTest {
     }
 
     @Test
+    public void failingTest() {
+	throw new BlobNotFoundException();   
+    }
+
+    @Test
     public void createBlobs() {
         DataStore store = new MemoryStore();
         store.saveBucket(new Bucket(BUCKET_NAME));

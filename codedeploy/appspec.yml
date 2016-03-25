@@ -1,0 +1,14 @@
+os: linux
+files:
+  - source: target/cloudshape-1.0.0.jar
+    destination: /tmp/
+hooks:
+  BeforeInstall:
+  - location: codedeploy/before-install.sh
+  AfterInstall: 
+  - location: codedeploy/after-install.sh
+  ApplicationStart:
+  - location: codedeploy/application-start.sh
+  ApplicationStop:
+  - location: codedeploy/application-stop.sh
+  - timeout: 180
